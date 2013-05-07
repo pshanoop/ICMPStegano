@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Icmpstegano by pshanoop</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Icmpstegano</h1>
+        <p>Network Steganography tool for ICMP protocol</p>
+
+        <p class="view"><a href="https://github.com/pshanoop/ICMPStegano">View the Project on GitHub <small>pshanoop/ICMPStegano</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/pshanoop/ICMPStegano/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/pshanoop/ICMPStegano/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/pshanoop/ICMPStegano">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>ICMPStegano</h1>
+
+<p>Network Steganography tool for ICMP protocol with good Qt GUI. The Qt GUI also provide good compression using zlib library and AES_265_CBC encryption for the files to make more secured communication. </p>
+
+<p>The whole program is in two layers Application Layer (GUI,Cryptography,Compression), Network Layer (ICMP Steganography). Both layers are separate programs which communicate each other by using Unix IPC message queue. This tool provides <em>two mode of steganography</em> they are following.</p>
+
+<p><strong>Secure :-</strong></p>
+
+<p>In each ICMP packet 4 bytes of hidden data can be inserted. The hidden data will be placed in both Identifier (2 bytes), Sequence number (2 bytes) fields. This is more secure than burst mode but transfer speed will be very slow.</p>
+
+<p><strong>Burst :-</strong></p>
+
+<p>In each ICMP packet 60 bytes of hidden data can be inserted. The hidden data will be placed Identifier (2 bytes), Sequence number (2 bytes) fields and optional data field ( The size depend on the packet size). This packet size can be changed by using &gt; <strong>PACKETSIZE</strong> (default value is 64) macro in &gt; <strong>IcmpStegano.h</strong>. The size of hidden data can be found using macro "DATA_LEN". Maximum packet size is 65515 bytes (65535 - 20 = 65515, where 20 is for IPv4 header size and 65535 is the maximum size of a packet in network). </p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/pshanoop">pshanoop</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
