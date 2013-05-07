@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="84">
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -m secure -i 172.18.15.88 -s -I  1179648 -O  1179648 -f /tmp.txt</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}" -m secure -i 172.18.15.88 -s -I  1179648 -O  1179648 -f /tmp.txt</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="x86" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -m secure -i 172.18.15.88 -s -I 1671168 -O 1671168 -f /tmp/ICMP_stegano_temp.z.enc</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -m secure -i 172.18.15.88 -s -I 1802240 -O 1802240 -f /tmp/ICMP_stegano_temp.z.enc</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -m secure -i 172.18.15.88 -s -I 1900544 -O 1900544 -f /tmp/ICMP_stegano_temp.z.enc</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -m secure -i 172.18.15.88 -s -I 1933312 -O 1933312 -f /tmp/ICMP_stegano_temp.z.enc</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -m secure -i 172.18.15.88 -s -I 1966080 -O 1966080 -f /tmp/ICMP_stegano_temp.z.enc</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -m secure -i 172.18.15.88 -r -I  0 -O  0 -f /tmp/ICMP_stegano_temp.z.enc</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -m secure -i 172.18.15.88 -r -I  0 -O  0 -f /tmp.txt</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -m secure -i 172.18.15.88 -r -I  851968 -O  851968 -f /tmp.txt</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -m secure -i 172.18.15.88 -s -I  851968 -O  851968 -f /tmp.txt</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -m secure -i 172.18.15.88 -s -I  1179648 -O  1179648 -f /tmp.txt</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}" -m secure -i 172.18.15.88 -s -I  1179648 -O  1179648 -f /tmp.txt</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>
