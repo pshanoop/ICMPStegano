@@ -30,17 +30,21 @@
       <section>
         <h1>ICMPStegano</h1>
 
-<p>Network Steganography tool for ICMP protocol with good Qt GUI. The Qt GUI also provide good compression using zlib library and AES_265_CBC encryption for the files to make more secured communication. </p>
+<p>Network Steganography tool for <em>ICMP protocol</em> with good <strong>Qt GUI</strong>. The Qt GUI also provide good compression using <code>zlib</code> library and <code>AES_265_CBC</code> encryption for the files to make more secured communication.</p>
 
-<p>The whole program is in two layers Application Layer (GUI,Cryptography,Compression), Network Layer (ICMP Steganography). Both layers are separate programs which communicate each other by using Unix IPC message queue. This tool provides <em>two mode of steganography</em> they are following.</p>
+<p>The whole program is in two layers Application Layer (GUI,Cryptography,Compression), Network Layer (ICMP Steganography). Both layers are separate programs which communicate each other by using Unix IPC message queue. This tool provides two mode of steganography they are following.</p>
 
-<p><strong>Secure :-</strong></p>
+<ul>
+<li><strong>Secure :-</strong></li>
+</ul><blockquote>
+<p>In each ICMP packet <code>4 bytes</code> of hidden data can be inserted. The hidden data will be placed in both <code>Identifier (2 bytes) and Sequence number (2 bytes)</code> fields. This is more secure than burst mode but transfer speed will be very slow.</p>
+</blockquote>
 
-<p>In each ICMP packet 4 bytes of hidden data can be inserted. The hidden data will be placed in both Identifier (2 bytes), Sequence number (2 bytes) fields. This is more secure than burst mode but transfer speed will be very slow.</p>
-
-<p><strong>Burst :-</strong></p>
-
-<p>In each ICMP packet 60 bytes of hidden data can be inserted. The hidden data will be placed Identifier (2 bytes), Sequence number (2 bytes) fields and optional data field ( The size depend on the packet size). This packet size can be changed by using &gt; <strong>PACKETSIZE</strong> (default value is 64) macro in &gt; <strong>IcmpStegano.h</strong>. The size of hidden data can be found using macro "DATA_LEN". Maximum packet size is 65515 bytes (65535 - 20 = 65515, where 20 is for IPv4 header size and 65535 is the maximum size of a packet in network). </p>
+<ul>
+<li><strong>Burst :-</strong></li>
+</ul><blockquote>
+<p>In each ICMP packet <code>60 bytes</code> of hidden data can be inserted. The hidden data will be placed Identifier (2 bytes), Sequence number (2 bytes) fields and <code>optional data field</code> ( The size depend on the packet size). This packet size can be changed by using <strong>PACKETSIZE</strong> (default value is 64) macro in &gt; IcmpStegano.h. The size of hidden data can be found using macro <strong>DATA_LEN</strong>. <em>Maximum packet size is 65515 bytes (65535 - 20 = 65515, where 20 is for IPv4 header size and 65535 is the maximum size of a packet in network).</em></p>
+</blockquote>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/pshanoop">pshanoop</a></p>
